@@ -15,7 +15,7 @@
 " of this license document, but changing it is not allowed.
 
 
-function SearchAndReplaceWith()
+function! SearchAndReplaceWith()
     let s = input("Enter expression to replace: ")
     let r = input("Enter expression for replacing \"" . s . "\" with: ")
     execute "%s/" . s . "/" . r . "/gc"
